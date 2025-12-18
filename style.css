@@ -1,0 +1,20 @@
+.input-disabled:disabled{
+    cursor: not-allowed;
+    background-color: grey;
+}
+
+.checked-input:checked + .label-checked{
+    color: #0661ab;
+}
+
+.input-numbers:in-range{
+    border: solid 3px green;
+}
+
+.input-numbers:out-of-range{
+    border: solid 3px red;
+}
+
+.input-numbers{
+    border: solid 3px black;
+}

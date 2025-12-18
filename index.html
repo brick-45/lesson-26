@@ -4,38 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        form{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .email{
-            width: 300px;
-            height: 30px;
-        }
-
-        .password{
-            width: 300px;
-            height: 30px;
-        }
-
-        button{
-            width: 150px;
-            height: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form>
-        <input type="email" class="email" placeholder="your email" required title="(@)">
-        <input type="password" class="password" placeholder="your password" required minlength="4" maxlength="8">
-        <input type="number" required min="-5" max="50">
-        <button type="submit">Submit</button>
-    </form>
+    <div>
+        <h2>:enabled і :disabled</h2>
+        <form>
+            <input type="text" class="input-enabled">
+            <input type="text" class="input-disabled" disabled>
+        </form>
+    </div>
+    <div>
+        <h2>:checked</h2>
+        <form>
+            <input type="checkbox" class="checked-input" value="checked"><label class="label-checked">checked-input</label>
+        </form>
+    </div>
+    <div>
+        <h2>:in-range і :out-of-range</h2>
+        <form>
+            <input type="number" min="1" max="40" class="input-numbers">
+        </form>
+    </div>
+    <div>
+        <h2></h2>
+        <form action=""></form>
+    </div>
 </body>
 </html>
